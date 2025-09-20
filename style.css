@@ -6,11 +6,16 @@ body {
     text-align: center;
 }
 
-header {
+.header, .footer {
     background-color: aqua;
     color: white;
     padding: 15px;
     margin: 10px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
 }
 
 nav {
@@ -38,4 +43,40 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: underline;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.main {
+  background-color: #a8f7e3;
+  width: 60%;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.sidebar {
+  background-color: #28e0f0;
+  width: 30%;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.sidebar:hover {
+  background-color: #14b9c6;
+}
+
+input[type="text"] {
+  transition: width 0.3s ease;
+  width: 150px;
+  padding: 5px;
+}
+
+input[type="text"]:focus {
+  width: 250px;
 }
